@@ -1,3 +1,3 @@
-from snake_game_1 import *
+from snake_game import *
 
 start_game()
