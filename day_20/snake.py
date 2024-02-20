@@ -23,6 +23,14 @@ class Snake:
 
             self.segments.append(new_segment)
 
+    def reset_snake(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
+
     def create_new_segment(self):
 
         new_segment = Turtle('square')
